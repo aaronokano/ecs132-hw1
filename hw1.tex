@@ -16,6 +16,33 @@
 \list{} \item \endlist
 
 % Let the homework begin!
-\section*{Question 1}
+\section*{Problem 1} 
+
+\subsection*{(a)}
+
+We know that there are $2^{3} = 8$ total number of outcomes because each of the
+three coins can take on only one of two values. Only three of those outcomes
+($W = 20$, $W = 30$, and $W=40$ are at least 20. The probability of a single
+one of those outcomes is $\frac{1}{8}$, so $P(W \geq 20)=P( W = 20 \cup W=30
+\cup W=40 )=P( W = 20 ) + P( W = 30 ) + P( W = 40 ) = 3 \cdot \frac{1}{8} =
+.375$.
+
+\subsection*{(b)}
+
+From (a) we know that there are only three outcomes where $W \geq 20$, and only
+two of them include nickels---$W = 20$ and $W = 40$. Therefore, the probability
+that your friend got a nickel given he won at least 20 cents is $\frac{2}{3}$.
+Let $N$ be the event that a nickel came out.
+
+\section*{Problem 2}
+
+Let us consider the case where the passenger does not succeed in making the
+bus. Also let A be the delay of bus A and B be the delay of bus B. Then, $P(A -
+B \geq 1.25)$ is the probability that the passenger misses bus B. This can be
+split into two cases: where $B = 0$ or $B = 1$. Then, $P( A - B \geq 1.25 ) =
+P( B = 0 \cap [A = 2 \cup A = 3] ) + P( B = 1 \cap [A = 3]) = P(B=0)\cdot [P(A
+= 2 ) + P( A = 3 ) ] + P(B=1)\cdot P(A = 3 ) = 0.5\cdot (0.15 + 0.1) + 0.5\cdot
+0.1 = 0.175$. Now the probability that the passenger succeeds is $1 - 0.175 =
+0.825$.
 
 \end{document}
