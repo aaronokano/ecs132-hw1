@@ -23,7 +23,7 @@
 
 We know that there are $2^{3} = 8$ total number of outcomes because each of the
 three coins can take on only one of two values. Only three of those outcomes
-($W = 20$, $W = 30$, and $W=40$ are at least 20. The probability of a single
+$(W = 20, W = 30, W = 40)$ are at least 20. The probability of a single
 one of those outcomes is $\frac{1}{8}$, so $P(W \geq 20)=P( W = 20 \cup W=30
 \cup W=40 )=P( W = 20 ) + P( W = 30 ) + P( W = 40 ) = 3 \cdot \frac{1}{8} =
 .375$.
@@ -43,8 +43,21 @@ bus. Also let A be the delay of bus A and B be the delay of bus B. Then, $P(A -
 B \geq 1.25)$ is the probability that the passenger misses bus B. This can be
 split into two cases: where $B = 0$ or $B = 1$. Then, $P( A - B \geq 1.25 ) =
 P( B = 0 \cap [A = 2 \cup A = 3] ) + P( B = 1 \cap [A = 3]) = P(B=0)\cdot [P(A
-= 2 ) + P( A = 3 ) ] + P(B=1)\cdot P(A = 3 ) = 0.5\cdot (0.15 + 0.1) + 0.5\cdot
-0.1 = 0.175$. Now the probability that the passenger succeeds is $1 - 0.175 =
-0.825$.
-((0.5)*(.5)) + ((.25)*(.25+.5))+((.15)*(.25+.5+.15))+((.1)*(.5+.25+.15+.1))
+= 2 ) + P( A = 3 ) ] + P(B=1)\cdot P(A = 3 ) = 0.5\cdot (0.15 + 0.1) + 0.25\cdot
+0.1 = 0.15$. Now the probability that the passenger succeeds is $1 - 0.15 =
+0.85$.
+
+\subsection*{(b)}
+
+Among the successful transfers, we must now find the probability that A arrives
+before B, which can be represented as $P( B - A > 0 \vert A - B \leq 1.25 )$.
+According to (2.6) from the book and from part (a), we can write this as
+$\frac{ P( (B - A > 0) \cap (A - B \leq 1.25) ) }{ P( B - A > 0 ) }$. Since the
+first event in the numerator only exists if the second is true, this equation
+can be simplified to $\frac{ P( B - A > 0 ) }{ P( A - B \leq 1.25 ) }$. From
+part (a) we know what $P( A - B \leq 1.25 )$ is. The numerator is $P(B = 1)
+\cdot P(A = 0) + [P(B = 2)\cdot (P(A = 0) + P(A = 1))] + [P(B = 3) \cdot (P(A=0) +
+P(A=1) + P(A=2))]$. The numerator evaluates to 0.3275 and the denominator is
+0.85. Therefore, the probability is $\frac{0.3275}{0.85} = .385$.
+
 \end{document}
